@@ -121,6 +121,7 @@ async def raid_msgg(event):
                Button.inline("• Join/Leave •", data="joinleave")
                Button.inline("• Dm •", data="dm")
                ],
+               ],
                )
     else:
         Alert = (
@@ -187,7 +188,7 @@ async def userbot_msgg(event):
                 [
             Button.inline("< Back", data="help_back")
                 ],
-                ]
+                ],
                 )
     else:
         Alert = (
