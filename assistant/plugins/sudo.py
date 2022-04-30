@@ -10,7 +10,7 @@ ABORT = "**All Process Cancelled ❌**"
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]addsudo"))
 async def add_sudo(event):
-   if event.sender_id in DEV:
+  if event.sender_id in DEV:
      if event.is_group:
           return await event.reply("**Use This Cmd In PM**")
      async with RiZoeL.conversation(event.chat_id) as rizx:
