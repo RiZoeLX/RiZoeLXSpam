@@ -1952,16 +1952,17 @@ owner_help = f"""
 **• Owner And Full Sudo Cmds •**
 __Note__ : Only Spam Bot's Owner and Full Sudo Can Use this cmds.
 
-**Inviteall:** Mass adding In Group
+**Scraping:** members adding In Group
 command:
-{hl}inviteall <Public Group invite Link or username>
+{hl}scrape <Public Group invite Link or username>
 
 **Profile:** Profile And Other Cmds
 commands:
 
 1) {hl}setname <Profile Name>
 2) {hl}setbio <coustom Bio>
-3) {hl}stats
+3) {hl}setpic <reply to media>
+4) {hl}stats
 
 **Add Sudo:** Add Sudo Using Spam bots
 commands:
