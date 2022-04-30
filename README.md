@@ -5,7 +5,7 @@
   <b>• RiZoeLXSpam •</b>
 </h1>
 
-[![Forks](https://img.shields.io/github/forks/RiZoeLX/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
+[![Forks](https://img.shields.io/github/forks/RiZoeLX/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/RiZoeLX/RiZoeLXSpam/fork)
 [![Python](https://img.shields.io/badge/Python-v3.10.4-blue)](https://www.python.org/)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/RiZoeLX/RiZoeLXSpam)   
 ----
