@@ -11,7 +11,7 @@ from pathlib import Path
 import inspect
 import logging
 import time
-from time import time
+#from time import time
 from datetime import datetime
 import telethon.utils
 from telethon.tl import functions, types
