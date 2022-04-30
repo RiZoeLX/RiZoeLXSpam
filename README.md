@@ -47,6 +47,6 @@
 
 </details>
 
-<h3 align="center"> Support: </h3>
-  <i> Channel </i>: [[@RiZoeLX](https://t.me/RiZoeLX)] <br>
-  <i> Support </i>: [[@DNHxHELL](https://t.me/DNHxHELL)] | [[@RiZoeLXSpam](https://t.me/RiZoeLXSpam)]
+<h3> Support: </h3>
+  <i> Channel </i>: [![@RiZoeLX](https://t.me/RiZoeLX)] <br>
+  <i> Support </i>: [![@DNHxHELL](https://t.me/DNHxHELL)] | [[@RiZoeLXSpam](https://t.me/RiZoeLXSpam)]
