@@ -93,11 +93,11 @@ async def help_back(event):
             Riz_Help,
             buttons=[
                [
-               Button.inline("• userbot •", data="userbot")
-               Button.inline("• Profile •", data="profile"),
+               Button.inline("• userbot •", data="userbot"),
+               Button.inline("• Profile •", data="profile")
                ],
                [
-               Button.inline("• Join/Leave •", data="joinleave")
+               Button.inline("• Join/Leave •", data="joinleave"),
                Button.inline("• Dm •", data="dm")
                ],
                ],
@@ -115,11 +115,11 @@ async def raid_msgg(event):
         await event.edit("__Click Below Button To Know cmds__",
            buttons=[
                [
-               Button.inline("• userbot •", data="userbot")
-               Button.inline("• Profile •", data="profile"),
+               Button.inline("• userbot •", data="userbot"),
+               Button.inline("• Profile •", data="profile")
                ],
                [
-               Button.inline("• Join/Leave •", data="joinleave")
+               Button.inline("• Join/Leave •", data="joinleave"),
                Button.inline("• Dm •", data="dm")
                ],
                ],
