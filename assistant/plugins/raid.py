@@ -6,6 +6,7 @@ from datetime import datetime
 from telethon.tl import functions
 from resources.data import RAID, REPLYRAID, RiZoeLX, GRP
 from RiZoeLXSpam import OWNER_ID
+from assistant import RiZoeL
 
 SEND_GRP = "**Send Group Link Where You want to start raid**"
 SEND_COUNT ="**Send Counts**"
