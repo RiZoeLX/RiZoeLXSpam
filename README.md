@@ -48,5 +48,5 @@
 </details>
 
 # Support:
-  * <i> Channel </i>: [RiZoeLX](https://t.me/RiZoeLX)] <br>
-  * <i> Support </i>: [DNHxHELL](https://t.me/DNHxHELL)] | [RiZoeLXSpam](https://t.me/RiZoeLXSpam)
+  * <i> Channel </i>: [@RiZoeLX](https://t.me/RiZoeLX) <br>
+  * <i> Support </i>: [@DNHxHELL](https://t.me/DNHxHELL) | [@RiZoeLXSpam](https://t.me/RiZoeLXSpam)
