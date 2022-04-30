@@ -2,7 +2,7 @@ import os
 import asyncio
 from telethon import events, Button, version
 from datetime import datetime
-from RiZoeLXSpam import ALIVE_PIC, rizoelversion, OWNER_ID
+from RiZoeLXSpam import RIZ_PIC, rizoelversion, OWNER_ID
 from RiZoeLXSpam import STRING, STRING2, STRING3, STRING4, STRING5 , STRING6, STRING7, STRING8, STRING9, STRING10, STRING11, STRING12, STRING13, STRING14, STRING15, STRING16, STRING17, STRING18, STRING19, STRING20, STRING21, STRING22, STRING23, STRING24, STRING25, STRING26, STRING27, STRING28, STRING29, STRING30, STRING31, STRING32, STRING33, STRING34, STRING35, STRING36, STRING37, STRING38, STRING39, STRING40
 from telethon.tl.functions.users import GetFullUserRequest
 from assistant import RiZoeL
@@ -178,7 +178,7 @@ async def _(event):
 
 
 
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+# RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
 
         
 @RiZoeL.on(events.NewMessage(pattern="[!/]ping"))
