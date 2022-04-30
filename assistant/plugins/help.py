@@ -100,6 +100,7 @@ async def help_back(event):
                Button.inline("• Join/Leave •", data="joinleave")
                Button.inline("• Dm •", data="dm")
                ],
+               ],
                )
     else:
         Alert = (
