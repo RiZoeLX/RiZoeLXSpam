@@ -1,12 +1,12 @@
 import os 
 import asyncio
-import random
 import re
 from telethon import events
-from datetime import datetime
 from resources.data import *
 from telethon.tl import functions
 from RiZoeLXSpam import OWNER_ID, hl
+from assistant import RiZoeL
+
 
 SEND_COUNT ="**Send Counts**"
 SEND_SPAM = "**Send spam message to spam**"
