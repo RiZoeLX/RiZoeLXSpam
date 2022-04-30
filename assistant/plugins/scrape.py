@@ -8,6 +8,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import InviteToChannelRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.errors.rpcerrorlist import PhoneCodeExpiredError, PhoneCodeInvalidError, PhoneNumberBannedError, PhoneNumberInvalidError, UserBannedInChannelError, PeerFloodError, UserPrivacyRestrictedError, ChatWriteForbiddenError, UserAlreadyParticipantError,  UserBannedInChannelError, UserAlreadyParticipantError,  UserPrivacyRestrictedError, ChatAdminRequiredError, FloodWaitError, RPCError
+from assistant import RiZoeL
 
 ABORT = "**All process Cancelled !**"
 
