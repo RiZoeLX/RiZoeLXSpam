@@ -6,6 +6,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from resources.data import GROUP, GRP
+from assistant import RiZoeL
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]join"))
 async def join(event):
