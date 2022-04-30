@@ -1,1 +1,1 @@
-worker: bash RiZoeLX
+worker: bash RiZoeL
