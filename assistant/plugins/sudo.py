@@ -2,6 +2,7 @@ import os
 from RiZoeLXSpam import OWNER_ID, HEROKU_APP_NAME, HEROKU_API_KEY
 from telethon import events
 import heroku3
+from assistant import RiZoeL
 
 heroku_api = "https://api.heroku.com"
 sudousers = os.environ.get("SUDO_USER", None)
