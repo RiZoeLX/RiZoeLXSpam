@@ -3,6 +3,8 @@ import os
 from telethon.tl import functions
 from telethon import events
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
+from assistant import RiZoeL
+
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]setname"))
 async def set_name(event):
