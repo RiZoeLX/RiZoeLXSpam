@@ -112,7 +112,7 @@ async def help_back(event):
 @RiZoeL.on(events.CallbackQuery(pattern=r"available"))
 async def raid_msgg(event):
     if event.query.user_id in SUDO_USERS or event.query.user_id in DEV:
-        await event.edit("__Click Below Button To Know cmds__,
+        await event.edit("__Click Below Button To Know cmds__",
            buttons=[
                [
                Button.inline("• userbot •", data="userbot")
