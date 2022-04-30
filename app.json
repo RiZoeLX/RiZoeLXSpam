@@ -1,6 +1,6 @@
 {
       "name": "RiZoeL X Spam",
-      "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
+      "description": "Most Powerful And Stable Telegram Spamming Userbots",
       "logo": "https://telegra.ph/file/db194f99e15db50f43c72.jpg",
       "keywords": [
         "telegram",
@@ -10,7 +10,7 @@
         "SpamBots"
       ],   
   "repository": "https://github.com/MrRizoel",
-  "website": "https://github.com/MrRizoel",
+  "website": "https://github.com/RiZoeLX",
   "success_url": "https://t.me/RiZoeLX",
   "env": {
              "API_ID": {
@@ -27,6 +27,11 @@
         "description": "Fill Api hash Take this value from My.telegram.org",
         "value": "",
         "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "Fill Bot Token If You want Spam Assistant else Leave it blank",
+        "value": "",
+        "required": false
       },
       "STRING": {
         "description": "Telethon String Session",
