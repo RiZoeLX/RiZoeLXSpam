@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="./ArrayCore.png" alt="RiZoeLXSpam Logo">
+  <img src="./logo.jpg" alt="RiZoeLXSpam Logo">
 </p>
 <h1 align="center">
   <b>• RiZoeLXSpam •</b>
 </h1>
 
-[![Forks](https://img.shields.io/github/forks/MrRizoel/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
-[![Python](https://img.shields.io/badge/Python-v3.9.7-blue)](https://www.python.org/)
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrRizoel/RiZoeLXSpam)   
+[![Forks](https://img.shields.io/github/forks/RiZoeLX/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
+[![Python](https://img.shields.io/badge/Python-v3.10.4-blue)](https://www.python.org/)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/RiZoeLX/RiZoeLXSpam)   
 ----
 
 <h2 align="center"> Features </h2>
