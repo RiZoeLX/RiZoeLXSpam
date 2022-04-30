@@ -47,9 +47,6 @@
 
 </details>
 
-# Credits
-- Team
-  - [RiZoeL](https://github.com/MrRizoel)    ``Creator``
-
-- Libraries
-  - [Telethon.](https://github.com/LonamiWebs/Telethon)
+<h3 align="center"> Support: </h3>
+  <i> Channel </i>: [@RiZoeLX](https://t.me/RiZoeLX)
+  <i> Support </i>: [@DNHxHELL](https://t.me/DNHxHELL) | [@RiZoeLXSpam](https://t.me/RiZoeLXSpam)
