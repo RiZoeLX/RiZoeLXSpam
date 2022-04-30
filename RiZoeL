@@ -1,0 +1,62 @@
+#!/bin/bash
+
+
+_python_() {
+    python3${pVer%.*} -c "$1"
+}
+
+_RIZOEL_MAIN() {
+    $(_python_ 'from git import Repo
+import sys
+
+_UPSTREAM_ = "https://github.com/RiZoeLX/plugins"
+_BRANCH_ = "main"
+
+repo = Repo.init()
+origin = repo.create_remote("temponame", _UPSTREAM_)
+origin.fetch()
+repo.create_head(_BRANCH_, origin.refs[_BRANCH_])
+repo.heads[_BRANCH_].checkout(True) ')
+}
+
+_riz_repo () {
+    local rrepo
+    rrepo=`echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvcGx1Z2lucw==" | base64 -d`
+    echo "$rlink"
+}
+
+Riz_zip () {
+    echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvUmlab2VMWFNwYW0vYXJjaGl2ZS9NYWluLnppcA==" | base64 -d
+}
+
+_RIZOEL_PLUG() {
+    local rrepo=$(_riz_repo)
+    $(_python_ 'from git import Repo
+import sys
+_UPSTREAM_ = "'$rrepo'"
+_BRANCH_ = "main"
+repo = Repo.init()
+origin = repo.create_remote("temponame", _UPSTREAM_)
+origin.fetch()
+repo.create_head(_BRANCH_, origin.refs[_BRANCH_])
+repo.heads[_BRANCH_].checkout(True) ')
+}
+
+_starter () {
+    local Rizpath
+    Rizpath="Plugins.zip"
+    echo "••• Downloading RiZoeLXSpam •••"
+    wget -q $(Riz_zip) -O "$Rizpath"
+    RIZPATH=$(zipinfo -1 "$Rizpath" | grep -v "/.");
+    unzip -qq "$Rizpath"
+    rm -rf "$Rizpath"
+    # _RIZOEL_MAIN
+    cd $RIZPATH
+    # _RIZOEL_PLUG
+    python3 ../startup/run.py ../requirements.txt requirements.txt
+    echo "••• Starting RiZoeLXSpam •••"
+    # python3 -m RiZoeLXSpam
+    python3 RiZoeLXSpam.py
+}
+
+_starter
