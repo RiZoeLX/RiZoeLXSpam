@@ -1,4 +1,5 @@
 from telethon import events, Button
+from assistant import RiZoeL
 
 HELP_PIC = "https://telegra.ph/file/9acc785291052c8f8998d.jpg"
 Riz_Help = " • Help menu Of RiZoeLXSpam • \n\n __Basic Cmds__ \n `/ping` \n `/alive` \n\n __Click On Below Buttons for help__"
