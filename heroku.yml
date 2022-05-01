@@ -1,0 +1,5 @@
+build:
+  docker:
+      RiZoeL: Dockerfile
+run:
+   RiZoeL: python3 RiZoeLXSpam.py
