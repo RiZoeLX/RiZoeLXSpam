@@ -29,10 +29,9 @@
 
 × <i> The easy way to host this bot, deploy to Heroku </i>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam/tree/Main)
 
 </details>
-
 <details>
 <summary><b>• Session String</b></summary>
 <br>
