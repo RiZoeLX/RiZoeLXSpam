@@ -96,8 +96,34 @@ CLIENTS = []
 XX = [1517994352]
 XX.append(OWNER_ID)
 # Sessions
+if STRING:
+    session_name = str(STRING)
+    print("String 1 Found")
+    Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+    try:
+        print("Booting Up The Client 1")
+        await Riz.start()
+        botme = await Riz.get_me()
+        await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+        await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+        await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
+        id_1 = telethon.utils.get_peer_id(botme)
+        CLIENTS.append(id_1)
+    except Exception as e:
+        Riz = "STRING"
+        print(e)
+        pass
+else:
+    print("Session 1 not Found")
+    session_name = "rizoelxspam"
+    Riz = TelegramClient(session_name, API_ID, API_HASH)
+    try:
+        await Riz.start()
+    except Exception as e:
+        pass
+
 async def RiZoeLX():
-    global Riz
+  #  global Riz
     global Riz2
     global Riz3
     global Riz5
@@ -137,32 +163,6 @@ async def RiZoeLX():
     global Riz38
     global Riz39
     global Riz40
-    
-    if STRING:
-        session_name = str(STRING)
-        print("String 1 Found")
-        Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 1")
-            await Riz.start()
-            botme = await Riz.get_me()
-            await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            id_1 = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(id_1)
-        except Exception as e:
-            Riz = "STRING"
-            print(e)
-            pass
-    else:
-        print("Session 1 not Found")
-        session_name = "rizoelxspam"
-        Riz = TelegramClient(session_name, API_ID, API_HASH)
-        try:
-            await Riz.start()
-        except Exception as e:
-            pass
    
     if STRING2: 
         session_name = str(STRING2)
@@ -976,7 +976,6 @@ async def RiZoeLX():
         except Exception as e:
             pass   
     
-  
     if STRING33: 
         session_name = str(STRING33)
         print("String 33  Found")
@@ -1186,7 +1185,7 @@ async def RiZoeLX():
 # loop = asyncio.get_event_loop()
 # loop = asyncio.new_event_loop()
 # asyncio.set_event_loop(loop)
-loop.run_until_complete(RiZoeLX())
+Riz.loop.run_until_complete(RiZoeLX())
 
 async def logss():
      owner = int(OWNER_ID)
@@ -4068,7 +4067,7 @@ if BOT_TOKEN:
             load_Assistant(shortname.replace(".py", ""))
     print("Assisting Bot set up completely!")
 
-loop.run_until_complete(logss())
+Riz.loop.run_until_complete(logss())
 print("RiZoeL X Spam Successfully deployed -!")
 print("Enjoy! Do visit @RiZoeLX")
 
