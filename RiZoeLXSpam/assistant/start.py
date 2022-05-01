@@ -198,8 +198,7 @@ async def Botping(e):
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]alive"))
 async def alive(event):
-        if event.sender_id not in SUDO_USERS or event.sender_id not in DEV:
-              return
+   if event.sender_id in SUDO_USERS or event.sender_id in DEV:
         ids = 0
         try:
            if STRING:
@@ -319,17 +318,16 @@ async def alive(event):
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]restart"))
 async def restart(event):
-    if event.sender_id not in DEV:
-        return
-    text = "**• Restarting •**"
-    await event.reply(text, parse_mode=None, link_preview=None )
-    try:
-       await RiZoeL.disconnect()
-    except Exception:
-       pass
-    os.execl(sys.executable, sys.executable, *sys.argv)
-       quit()
+  if event.sender_id in DEV:
+     text = "**• Restarting •**"
+     await event.reply(text, parse_mode=None, link_preview=None )
+     try:
+        await RiZoeL.disconnect()
+     except Exception:
+        pass
+     os.execl(sys.executable, sys.executable, *sys.argv)
+        quit()
     
-    if event.sender_id in SUDO_USERS:
+  if event.sender_id in SUDO_USERS:
         await event.reply("**Sorry !! You can't Use this Cmd only Owner and Full Sudo Users can**")
        
