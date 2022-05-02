@@ -21,7 +21,8 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 #version
 
-rizoelversion = "beta 0.0"
+rizoelversion = "v2.0.4"
+StartTime = time.time()
 
 #values
 API_ID = config("API_ID", default=None, cast=int)
