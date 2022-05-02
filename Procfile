@@ -1,1 +1,1 @@
-RiZoeL: python3 RiZoeLXSpam.py
+RiZoeL: python3 -m RiZoeLXSpam
