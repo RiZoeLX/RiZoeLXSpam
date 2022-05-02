@@ -53,8 +53,8 @@ async def logss():
         Findme = await RiZoeL.get_me()
         Name = Findme.first_name
         username = Findme.username
-        id = telethon.utils.get_peer_id(Findme)
-        XX.append(id)
+      #  id = telethon.utils.get_peer_id(Findme)
+       # XX.append(id)
         message = "/start"
         Log_msg += f"• **Assistant:** On \n"
         Log_msg += f" × Assistant Name: {Name} \n × Assistant Username: @{username} \n"
