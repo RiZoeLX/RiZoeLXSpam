@@ -28,10 +28,6 @@ from telethon.tl.functions.photos import UploadProfilePhotoRequest
 
 from RiZoeLXSpam import (OWNER_ID, StartTime, rizoelversion, ALIVE_PIC, ALIVE_MSG, PING_MSG, HEROKU_API_KEY, HEROKU_APP_NAME)
 
-logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
-                    level=logging.WARNING)
-
-
 # Userbot Cmds #
 def xHell(milliseconds: int) -> str:
     seconds, milliseconds = divmod(int(milliseconds), 1000)
