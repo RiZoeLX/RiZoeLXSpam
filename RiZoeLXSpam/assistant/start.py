@@ -326,7 +326,7 @@ async def restart(event):
      except Exception:
         pass
      os.execl(sys.executable, sys.executable, *sys.argv)
-        quit()
+     quit()
     
   if event.sender_id in SUDO_USERS:
         await event.reply("**Sorry !! You can't Use this Cmd only Owner and Full Sudo Users can**")
