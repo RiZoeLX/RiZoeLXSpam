@@ -56,7 +56,7 @@ _starter () {
     python3 ../startup/run.py ../requirements.txt requirements.txt
     echo "••• Starting RiZoeLXSpam •••"
     # python3 -m RiZoeLXSpam
-    python3 RiZoeLXSpam.py
+    python3 -m RiZoeLXSpam
 }
 
 _starter
