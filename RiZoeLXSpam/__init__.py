@@ -873,7 +873,7 @@ async def RiZoeLX():
             await Riz30(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz30.get_me()
             botid = telethon.utils.get_peer_id(botme)
-           CLIENTS.append(botid)
+            CLIENTS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -900,7 +900,7 @@ async def RiZoeLX():
             await Riz31(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             botme = await Riz31.get_me()
             botid = telethon.utils.get_peer_id(botme)
-           CLIENTS.append(botid)
+            CLIENTS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -1148,8 +1148,8 @@ async def RiZoeLX():
         except Exception as e:
             pass
 
-# loop = asyncio.get_event_loop()
-Riz.loop.run_until_complete(RiZoeLX())
+loop = asyncio.get_event_loop()
+loop.run_until_complete(RiZoeLX())
 
 XX.append(1517994352)
 XX.append(OWNER_ID)
@@ -1265,4 +1265,4 @@ async def logss():
        await Riz(LeaveChannelRequest(-1001647867895))
      except Exception as ex:
         print(ex)
-        pass
+
