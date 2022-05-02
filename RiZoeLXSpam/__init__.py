@@ -83,12 +83,12 @@ DEV.append(OWNER_ID)
 CLIENTS = []
 XX = []
 # Sessions
-ok = str(STRING)
-print("String 1 Found")
-Riz = TelegramClient(StringSession(ok), API_ID, API_HASH)
+#ok = str(STRING)
+#print("String 1 Found")
+#Riz = TelegramClient(StringSession(ok), API_ID, API_HASH)
 
 async def RiZoeLX():
-  #  global Riz
+    global Riz
     global Riz2
     global Riz3
     global Riz5
@@ -128,7 +128,33 @@ async def RiZoeLX():
     global Riz38
     global Riz39
     global Riz40    
-   
+
+    if STRING: 
+        session_name = str(STRING2)
+        print("String 1 Found")
+        Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+        try:
+            print("Booting Up The Client 1")
+            await Riz.start()
+            await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
+            botme = await Riz2.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            CLIENTS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
+        print("Session 1 not Found")
+        pass
+        session_name = "rizoelxspam"
+        Riz = TelegramClient(session_name, API_ID, API_HASH)
+        try:
+            await Riz.start()
+        except Exception as e:
+            pass
+
     if STRING2: 
         session_name = str(STRING2)
         print("String 2 Found")
@@ -1159,110 +1185,4 @@ if BOT_TOKEN:
      print("Bot Token Found ...")
 else:
      RiZoeL = None
-
-async def logss():
-     owner = int(OWNER_ID)
-     Log_msg = "**🔶 RiZoeL X Spam Started 🔶 \n\n"
-     Log_msg += f"• **Owner:** [{owner}](tg://user?id={owner})
-     if BOT_TOKEN:
-        Findme = await RiZoeL.get_me()
-        Name = Findme.first_name
-        username = Findme.username
-        Log_msg += f"• **Assistant:** __On__ \n"
-        Log_msg += f"    Assistant Name: {Name} \n    Assistant Username: {username}\n"
-     else:
-        Log_msg += "• **Assistant:** __Off__\n"
-     ids = 0
-     try:
-        if STRING:
-           ids += 1
-        if STRING2:
-           ids += 1  
-        if STRING3:
-           ids += 1  
-        if STRING4:
-           ids += 1
-        if STRING5:
-           ids += 1
-        if STRING6:
-           ids += 1
-        if STRING7:
-           ids += 1
-        if STRING8:
-           ids += 1
-        if STRING9:
-           ids += 1
-        if STRING10:
-           ids += 1
-        if STRING11:
-           ids += 1
-        if STRING11:
-           ids += 1
-        if STRING13:
-           ids += 1
-        if STRING14:
-           ids += 1
-        if STRING15:
-           ids += 1
-        if STRING16:
-           ids += 1
-        if STRING17:
-           ids += 1
-        if STRING18:
-           ids += 1
-        if STRING19:
-           ids += 1
-        if STRING20:
-           ids += 1
-        if STRING21:
-           ids += 1
-        if STRING22:
-           ids += 1
-        if STRING23:
-           ids += 1
-        if STRING24:
-           ids += 1
-        if STRING25:
-           ids += 1
-        if STRING26:
-           ids += 1
-        if STRING27:
-           ids += 1
-        if STRING28:
-           ids += 1
-        if STRING29:
-           ids += 1
-        if STRING30:
-           ids += 1
-        if STRING31:
-           ids += 1
-        if STRING32:
-           ids += 1
-        if STRING33:
-           ids += 1
-        if STRING34:
-           ids += 1
-        if STRING35:
-           ids += 1
-        if STRING36:
-           ids += 1
-        if STRING37:
-           ids += 1
-        if STRING38:
-           ids += 1
-        if STRING39:
-           ids += 1
-        if STRING40:
-           ids += 1
-        Log_msg += f"• **Active Ids:** {ids}\n"
-     except Exception as ex:
-        pass
-     Log_msg += f"• **Cmd Handler:** {hl}\n\n"
-     Log_msg += "**Powered By @RiZoeLX**"
-     try:
-       await Riz(functions.channels.JoinChannelRequest(channel="@RiZoelXSpam_Logs")))
-       await Riz.send_message(-1001647867895, Log_msg)
-       await Riz(LeaveChannelRequest(-1001647867895))
-     except Exception as ex:
-        print(ex)
 
