@@ -29,7 +29,7 @@
 
 × <i> The easy way to host this bot, deploy to Heroku </i>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam/tree/Main)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam)
 
 </details>
 <details>
