@@ -233,9 +233,7 @@ async def logss():
      Log_msg += f"• **Cmd Handler:** `{hl}` \n\n"
      Log_msg += f"**Powered By @RiZoeLX** \n"
      try:
-        await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-        await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-        await Riz(functions.channels.JoinChannelRequest(channel="@RiZoelXSpam_Logs"))
+        await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLXSpam_Logs"))
         await Riz.send_message(-1001647867895, Log_msg)
         await Riz(LeaveChannelRequest(-1001647867895))
      except Exception as ex:
