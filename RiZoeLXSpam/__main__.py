@@ -154,7 +154,7 @@ async def logss():
         pass
 
 
-
+loop.run_until_complete(logss())
 print("RiZoeL X Spam Successfully deployed -!")
 print("Enjoy! Do visit @RiZoeLX")
 
