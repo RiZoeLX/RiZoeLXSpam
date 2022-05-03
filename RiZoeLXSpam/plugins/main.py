@@ -47,7 +47,7 @@ def xHell(milliseconds: int) -> str:
     else:
         return xd
 
-pongg = PING_MSG if ALIVE_PIC else "ʀɪᴢᴏᴇʟ X sᴘᴀᴍ"
+pongg = PING_MSG if PING_MSG else "ʀɪᴢᴏᴇʟ X sᴘᴀᴍ"
 RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
 Alivemsg = ALIVE_MSG if ALIVE_MSG else "𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲."
 
