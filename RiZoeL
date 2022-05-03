@@ -1,62 +1,45 @@
 #!/bin/bash
 
 
-_python_() {
-    python3${pVer%.*} -c "$1"
+RiZoeL_Spam () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $RiZoeL == "rizoelxspam" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvUmlab2VMWFNwYW0vYXJjaGl2ZS9NYWluLnppcA==" | base64 -d
+    elif [[ $RiZoeL == "ARRAYCORE" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvUmlab2VMWFNwYW0vYXJjaGl2ZS9NYWluLnppcA==" | base64 -d
+    elif [[ $RiZoeL =~ $regex ]]
+    then
+        if [[ $RiZoeL_BRANCH ]]
+        then
+            echo "${RiZoeL}/archive/${RiZoeL_BRANCH}.zip"
+        else
+            echo "${RiZoeL}/archive/Main.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvUmlab2VMWFNwYW0vYXJjaGl2ZS9NYWluLnppcA==" | base64 -d
+    fi
 }
 
-_RIZOEL_MAIN() {
-    $(_python_ 'from git import Repo
-import sys
 
-_UPSTREAM_ = "https://github.com/RiZoeLX/plugins"
-_BRANCH_ = "main"
-
-repo = Repo.init()
-origin = repo.create_remote("temponame", _UPSTREAM_)
-origin.fetch()
-repo.create_head(_BRANCH_, origin.refs[_BRANCH_])
-repo.heads[_BRANCH_].checkout(True) ')
-}
-
-_riz_repo () {
-    local rrepo
-    rrepo=`echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvcGx1Z2lucw==" | base64 -d`
-    echo "$rlink"
-}
-
-Riz_zip () {
-    echo "aHR0cHM6Ly9naXRodWIuY29tL1JpWm9lTFgvUmlab2VMWFNwYW0vYXJjaGl2ZS9NYWluLnppcA==" | base64 -d
-}
-
-_RIZOEL_PLUG() {
-    local rrepo=$(_riz_repo)
-    $(_python_ 'from git import Repo
-import sys
-_UPSTREAM_ = "'$rrepo'"
-_BRANCH_ = "main"
-repo = Repo.init()
-origin = repo.create_remote("temponame", _UPSTREAM_)
-origin.fetch()
-repo.create_head(_BRANCH_, origin.refs[_BRANCH_])
-repo.heads[_BRANCH_].checkout(True) ')
-}
-
-_starter () {
-    local Rizpath
-    Rizpath="Plugins.zip"
+_set_bot () {
+    local zippath
+    zippath="rizoelxspam.zip"
     echo "••• Downloading RiZoeLXSpam •••"
-    wget -q $(Riz_zip) -O "$Rizpath"
-    RIZPATH=$(zipinfo -1 "$Rizpath" | grep -v "/.");
-    unzip -qq "$Rizpath"
-    rm -rf "$Rizpath"
-    # _RIZOEL_MAIN
-    cd $RIZPATH
-    # _RIZOEL_PLUG
-    python3 ../startup/run.py ../requirements.txt requirements.txt
-    echo "••• Starting RiZoeLXSpam •••"
-    # python3 -m RiZoeLXSpam
+    wget -q $(RiZoeL_Spam) -O "$zippath"
+    echo "  Unpacking Data ..."
+    TheRiZoeL=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "Done"
+    rm -rf "$zippath"
+    sleep 3
+    cd $TheRiZoeL
+    echo " • RiZoeLXSpam Here. •
+
+    python3 ./startup/run.py ./requirements.txt requirements.txt
     python3 -m RiZoeLXSpam
 }
 
-_starter
+_set_bot
