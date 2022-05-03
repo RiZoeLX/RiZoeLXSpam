@@ -26,7 +26,7 @@ from telethon.tl.types import Channel, Chat, InputPhoto, User
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
 
-from RiZoeLXSpam import (OWNER_ID, StartTime, rizoelversion, ALIVE_PIC, ALIVE_MSG, PING_MSG, HEROKU_API_KEY, HEROKU_APP_NAME)
+from RiZoeLXSpam import (OWNER_ID, StartTime, rizoelversion, ALIVE_PIC, ALIVE_MSG, PING_MSG, HEROKU_API_KEY, HEROKU_APP_NAME, BOT_TOKEN, RiZoeL)
 
 # Userbot Cmds #
 def xHell(milliseconds: int) -> str:
@@ -104,17 +104,7 @@ async def ping(e):
         uptime = xHell((time.time() - StartTime) * 1000)
         pingop = f"⌾ {pongg} ⌾ \n\n ༝ ᴘɪɴɢ: `{ms}` ᴍs \n ༝ ᴜᴘᴛɪᴍᴇ: {uptime}"
         await fuk.edit(pingop)
-
-rizoel = f"✧ {Alivemsg} ✧\n\n"
-rizoel += f"════════════════════\n"
-rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
-rizoel += f"► **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"  
-rizoel += f"► **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/DNHxHELL)\n"
-rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/RiZoeLX)\n"
-rizoel += f"════════════════════\n\n"
-rizoel += f"[•Repo•](https://github.com/MrRizoel/RiZoeLXSpam)"            
-         
+       
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 @Riz2.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 @Riz3.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
@@ -157,7 +147,23 @@ rizoel += f"[•Repo•](https://github.com/MrRizoel/RiZoeLXSpam)"
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 async def alive(event):
    if event.sender_id in SUDO_USERS or event.sender_id in DEV:
-     await event.client.send_file(event.chat_id,
+       rizoel = f"✧ {Alivemsg} ✧\n\n"
+       rizoel += f"════════════════════\n"
+       rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+       rizoel += f"► **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+       rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"  
+       if BOT_TOKEN:
+           Findme = await RiZoeL.get_me()
+           Name = Findme.first_name
+           username = Findme.username
+           rizoel += f"► **ᴀssɪsᴛᴀɴᴛ:** __On__ \n"
+           rizoel += f"    × ᴀssɪsᴛᴀɴᴛ ɴᴀᴍᴇ: {Name} \n    × ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀɴᴀᴍᴇ: @{username}\n"
+       else:
+           rizoel += "► **ᴀssɪsᴛᴀɴᴛ:** __Off__\n"
+       rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [Join.](https://t.me/RiZoeLX)\n"
+       rizoel += f"════════════════════\n\n"
+       rizoel += f"[•Repo•](https://github.com/MrRizoel/RiZoeLXSpam)"
+       await event.client.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
 
