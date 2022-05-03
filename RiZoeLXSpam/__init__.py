@@ -133,7 +133,7 @@ async def RiZoeLX():
     global Riz40    
 
     if STRING: 
-        session_name = str(STRING2)
+        session_name = str(STRING)
         print("String 1 Found")
         Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
@@ -142,7 +142,7 @@ async def RiZoeLX():
             await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
-            botme = await Riz2.get_me()
+            botme = await Riz.get_me()
             botid = telethon.utils.get_peer_id(botme)
             CLIENTS.append(botid)
         except Exception as e:
