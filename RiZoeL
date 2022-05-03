@@ -37,8 +37,7 @@ _set_bot () {
     sleep 3
     cd $TheRiZoeL
     echo " • RiZoeLXSpam Here. •
-
-    python3 ./startup/run.py ./requirements.txt requirements.txt
+    python3 ../startup/run.py ../requirements.txt requirements.txt
     python3 -m RiZoeLXSpam
 }
 
