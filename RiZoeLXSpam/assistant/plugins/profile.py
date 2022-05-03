@@ -4,6 +4,7 @@ from telethon.tl import functions
 from telethon import events
 from telethon.tl.functions.photos import UploadProfilePhotoRequest
 
+ABORT = "**All process Cancelled !**"
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]setname"))
 async def set_name(event):
