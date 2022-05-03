@@ -139,6 +139,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 1")
             await Riz.start()
+            await Riz(functions.account.UpdateProfileRequest(last_name="• 1 •"))
             await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -165,6 +166,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 2")
             await Riz2.start()
+            await Riz2(functions.account.UpdateProfileRequest(last_name="• 2 •"))
             await Riz2(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz2(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -191,6 +193,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 3")
             await  Riz3.start()
+            await Riz3(functions.account.UpdateProfileRequest(last_name="• 3 •"))
             await Riz3(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz3(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -217,6 +220,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 4")
             await Riz4.start()
+            await Riz4(functions.account.UpdateProfileRequest(last_name="• 4 •"))
             await Riz4(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz4(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz4(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -243,6 +247,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 5")
             await Riz5.start()
+            await Riz5(functions.account.UpdateProfileRequest(last_name="• 5 •"))
             await Riz5(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz5(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz5(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -269,6 +274,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 6")
             await Riz6.start()
+            await Riz6(functions.account.UpdateProfileRequest(last_name="• 6 •"))
             await Riz6(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz6(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz6(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -295,6 +301,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 7")
             await Riz7.start()
+            await Riz7(functions.account.UpdateProfileRequest(last_name="• 7 •"))
             await Riz7(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz7(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz7(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -322,6 +329,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 8")
             await Riz8.start()
+            await Riz8(functions.account.UpdateProfileRequest(last_name="• 8 •"))
             await Riz8(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz8(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -348,6 +356,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 9")
             await Riz9.start()
+            await Riz9(functions.account.UpdateProfileRequest(last_name="• 9 •"))
             await Riz9(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz9(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz9(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -375,6 +384,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 10")
             await Riz10.start()
+            await Riz10(functions.account.UpdateProfileRequest(last_name="• 10 •"))
             await Riz10(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz10(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz10(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -402,6 +412,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 11")
             await Riz11.start()
+            await Riz11(functions.account.UpdateProfileRequest(last_name="• 11 •"))
             await Riz11(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz11(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz11(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -429,6 +440,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 12")
             await Riz12.start()
+            await Riz12(functions.account.UpdateProfileRequest(last_name="• 12 •"))
             await Riz12(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz12(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz12(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -456,6 +468,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 13")
             await Riz13.start()
+            await Riz13(functions.account.UpdateProfileRequest(last_name="• 13 •"))
             await Riz13(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz13(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz13(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -483,6 +496,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 14")
             await Riz14.start()
+            await Riz14(functions.account.UpdateProfileRequest(last_name="• 14 •"))
             await Riz14(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz14(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz14(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -510,6 +524,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 15")
             await Riz15.start()
+            await Riz15(functions.account.UpdateProfileRequest(last_name="• 15 •"))
             await Riz15(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz15(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz15(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -538,6 +553,7 @@ async def RiZoeLX():
             print("Booting Up The Client 16")
             await Riz16.start()
             botme = await Riz16.get_me()
+            await Riz16(functions.account.UpdateProfileRequest(last_name="• 16 •"))
             await Riz16(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz16(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz16(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -563,6 +579,7 @@ async def RiZoeLX():
             print("Booting Up The Client 17")
             await Riz17.start()
             botme = await Riz17.get_me()
+            await Riz17(functions.account.UpdateProfileRequest(last_name="• 17 •"))
             await Riz17(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz17(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz17(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -588,6 +605,7 @@ async def RiZoeLX():
             print("Booting Up The Client 18")
             await Riz18.start()
             botme = await Riz18.get_me()
+            await Riz18(functions.account.UpdateProfileRequest(last_name="• 18 •"))
             await Riz18(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz18(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz18(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -613,6 +631,7 @@ async def RiZoeLX():
             print("Booting Up The Client 19")
             await Riz19.start()
             botme = await Riz19.get_me()
+            await Riz19(functions.account.UpdateProfileRequest(last_name="• 19 •"))
             await Riz19(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz19(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz19(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -638,6 +657,7 @@ async def RiZoeLX():
             print("Booting Up The Client 20")
             await Riz20.start()
             botme = await Riz20.get_me()
+            await Riz20(functions.account.UpdateProfileRequest(last_name="• 20 •"))
             await Riz20(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz20(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz20(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -663,6 +683,7 @@ async def RiZoeLX():
             print("Booting Up The Client 21")
             await Riz21.start()
             botme = await Riz21.get_me()
+            await Riz21(functions.account.UpdateProfileRequest(last_name="• 21 •"))
             await Riz21(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz21(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz21(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -672,7 +693,7 @@ async def RiZoeLX():
             print(e)
             pass
     else:
-        print("Session 31 not Found")
+        print("Session 21 not Found")
         session_name = "rizoelxspam"
         Riz21 = TelegramClient(session_name, API_ID, API_HASH)
         try:
@@ -685,8 +706,9 @@ async def RiZoeLX():
         print("String 22 Found")
         Riz22 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            print("Booting Up The Client 32")
+            print("Booting Up The Client 22")
             await Riz22.start()
+            await Riz22(functions.account.UpdateProfileRequest(last_name="• 22 •"))
             await Riz22(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz22(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz22(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -713,6 +735,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 23")
             await  Riz23.start()
+            await Riz23(functions.account.UpdateProfileRequest(last_name="• 23 •"))
             await Riz23(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz23(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz23(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -739,6 +762,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 24")
             await Riz24.start()
+            await Riz24(functions.account.UpdateProfileRequest(last_name="• 24 •"))
             await Riz24(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz24(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz24(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -765,6 +789,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 35")
             await Riz25.start()
+            await Riz25(functions.account.UpdateProfileRequest(last_name="• 25 •"))
             await Riz25(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz25(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz25(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -786,11 +811,12 @@ async def RiZoeLX():
                   
     if STRING26: 
         session_name = str(STRING26)
-        print("String 36 Found")
+        print("String 26 Found")
         Riz26 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 26")
             await Riz26.start()
+            await Riz26(functions.account.UpdateProfileRequest(last_name="• 26 •"))
             await Riz26(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz26(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz26(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -817,6 +843,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 27")
             await Riz27.start()
+            await Riz27(functions.account.UpdateProfileRequest(last_name="• 27 •"))
             await Riz27(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz27(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz27(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -844,6 +871,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 18")
             await Riz28.start()
+            await Riz28(functions.account.UpdateProfileRequest(last_name="• 28 •"))
             await Riz28(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz28(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz28(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -870,6 +898,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 29")
             await Riz29.start()
+            await Riz29(functions.account.UpdateProfileRequest(last_name="• 29 •"))
             await Riz29(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz29(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz29(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -897,6 +926,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 30")
             await Riz30.start()
+            await Riz30(functions.account.UpdateProfileRequest(last_name="• 30 •"))
             await Riz30(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz30(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz30(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -924,6 +954,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 31")
             await Riz31.start()
+            await Riz31(functions.account.UpdateProfileRequest(last_name="• 31 •"))
             await Riz31(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz31(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz31(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -951,6 +982,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 32")
             await Riz32.start()
+            await Riz32(functions.account.UpdateProfileRequest(last_name="• 32 •"))
             await Riz32(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz32(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz32(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -978,6 +1010,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 33")
             await Riz33.start()
+            await Riz33(functions.account.UpdateProfileRequest(last_name="• 33 •"))
             await Riz33(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz33(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz33(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1005,6 +1038,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 34")
             await Riz34.start()
+            await Riz34(functions.account.UpdateProfileRequest(last_name="• 34 •"))
             await Riz34(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz34(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz34(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1032,6 +1066,7 @@ async def RiZoeLX():
         try:
             print("Booting Up The Client 35")
             await Riz35.start()
+            await Riz35(functions.account.UpdateProfileRequest(last_name="• 35 •"))
             await Riz35(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz35(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz35(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1060,6 +1095,7 @@ async def RiZoeLX():
             print("Booting Up The Client 36")
             await Riz36.start()
             botme = await Riz36.get_me()
+            await Riz36(functions.account.UpdateProfileRequest(last_name="• 36 •"))
             await Riz36(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz36(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz36(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1085,6 +1121,7 @@ async def RiZoeLX():
             print("Booting Up The Client 37")
             await Riz37.start()
             botme = await Riz37.get_me()
+            await Riz37(functions.account.UpdateProfileRequest(last_name="• 37 •"))
             await Riz37(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz37(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz37(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1110,6 +1147,7 @@ async def RiZoeLX():
             print("Booting Up The Client 38")
             await Riz38.start()
             botme = await Riz38.get_me()
+            await Riz38(functions.account.UpdateProfileRequest(last_name="• 38 •"))
             await Riz38(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz38(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz38(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1135,6 +1173,7 @@ async def RiZoeLX():
             print("Booting Up The Client 39")
             await Riz39.start()
             botme = await Riz39.get_me()
+            await Riz39(functions.account.UpdateProfileRequest(last_name="• 39 •"))
             await Riz39(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz39(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz39(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
@@ -1160,6 +1199,7 @@ async def RiZoeLX():
             print("Booting Up The Client 40")
             await Riz40.start()
             botme = await Riz40.get_me()
+            await Riz40(functions.account.UpdateProfileRequest(last_name="• 40 •"))
             await Riz40(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz40(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz40(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
