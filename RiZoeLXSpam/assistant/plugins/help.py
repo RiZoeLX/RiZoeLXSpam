@@ -80,7 +80,6 @@ __Usage__: Send Commands In Your Assistant's pm and Follow The Instructions Whic
 
 **Change Bio:** `/setbio`
 
-**Change Profile pic:** `/setpic`
 
 ** © @RiZoeLX**
 """
