@@ -49,13 +49,13 @@ if BOT_TOKEN:
 async def logss():
      owner = int(OWNER_ID)
      Log_msg = "**🔶 RiZoeL X Spam Started 🔶 \n\n"
-     Log_msg += f"• **Owner:** [{owner}](tg://user?id={owner})
+     Log_msg += f"• **Owner:** [{owner}](tg://user?id={owner}) \n"
      if BOT_TOKEN:
         Findme = await RiZoeL.get_me()
         Name = Findme.first_name
         username = Findme.username
         Log_msg += f"• **Assistant:** __On__ \n"
-        Log_msg += f"    Assistant Name: {Name} \n    Assistant Username: {username}\n"
+        Log_msg += f"    × Assistant Name: {Name} \n    × Assistant Username: {username}\n"
      else:
         Log_msg += "• **Assistant:** __Off__\n"
      ids = 0
