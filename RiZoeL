@@ -36,7 +36,7 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 3
     cd $TheRiZoeL
-    echo " • RiZoeLXSpam Here. •
+    echo "• RiZoeLXSpam Here. •"
     python3 ../startup/run.py ../requirements.txt requirements.txt
     python3 -m RiZoeLXSpam
 }
