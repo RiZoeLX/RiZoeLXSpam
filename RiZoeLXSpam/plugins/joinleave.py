@@ -1,4 +1,5 @@
 import os
+from telethon import events
 from telethon.tl import functions
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from telethon.tl.functions.channels import LeaveChannelRequest
