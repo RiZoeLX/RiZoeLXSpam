@@ -162,7 +162,7 @@ async def alive(event):
            rizoel += "► **ᴀssɪsᴛᴀɴᴛ:** __Off__\n"
        rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [Join.](https://t.me/RiZoeLX)\n"
        rizoel += f"════════════════════\n\n"
-       rizoel += f"[•Repo•](https://github.com/MrRizoel/RiZoeLXSpam)"
+       rizoel += f"► **Source Code:** [•Repo•](https://github.com/RiZoeLX/RiZoeLXSpam)"
        await event.client.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
@@ -1713,7 +1713,7 @@ async def dmraid(e):
 @Riz38.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
-async def join(e):
+async def tspam(e):
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **Time Spam**\n\nCommand:\n\n`{hl}tspam` <time in seconds> <count> <message to spam>\n\n`{hl}tspam` <time in Seconds> <count> <reply to a message>"     
     rizol = e.chat_id
     if e.sender_id in SUDO_USERS:
@@ -1738,15 +1738,16 @@ async def join(e):
                      await smex.reply(message)
                  else:
                     await e.client.send_message(rizol, message)
-                 await asyncio.sleep(0.4)
+                 await asyncio.sleep(0.3)
         elif e.reply_to_msg_id and smex.media:
             counter = int(RizoelOk[0])
             sleeptime = float(Rizoel[0])
+            hehe = await e.reply(f"Spam Will Start in {spamtime}secs")
+            await asyncio.sleep(spamtime)
+            await hehe.edit("**Time Over ⚠️** Starting spam.")
             for _ in range(counter):
-                await asyncio.sleep(spamtime)
-                async with e.client.action(rizol, "document"):
-                    smex = await e.client.send_file(rizol, smex, caption=smex.text)
-                    await gifspam(e, smex)
+                smex = await e.client.send_file(rizol, smex, caption=smex.text)
+                await gifspam(e, smex)
                 await asyncio.sleep(0.5)
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
@@ -1761,9 +1762,10 @@ async def join(e):
             await hehe.edit("**Time Over ⚠️** Starting spam.")
             for _ in range(counter):
                 await e.client.send_message(rizol, message)
-                await asyncio.sleep(0.4)
+                await asyncio.sleep(0.3)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
+
 # join leave
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%sjoin(?: |$)(.*)" % hl))
