@@ -149,7 +149,7 @@ async def alive(event):
    if event.sender_id in SUDO_USERS or event.sender_id in DEV:
        rizoel = f"✧ {Alivemsg} ✧\n\n"
        rizoel += f"════════════════════\n"
-       rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+       rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.4`\n"
        rizoel += f"► **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
        rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"  
        if BOT_TOKEN:
