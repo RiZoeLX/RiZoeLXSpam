@@ -57,7 +57,7 @@ __Usage__: Send Commands In Your Assistant's pm and Follow The Instructions Whic
 
 **Check Ping/uptime**: `/ping`
 
-**Check Alive Version"": `/alive`
+**Check Alive Version**: `/alive`
 
 **Restart Bots:** `/restart`
 
