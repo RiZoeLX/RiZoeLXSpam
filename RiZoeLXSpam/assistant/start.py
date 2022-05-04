@@ -13,7 +13,7 @@ btn = [
       Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/DNHxHELL")
       ],
       [
-      Button.url("• Source Code •", "https://GitHub.com/MrRizoel/RiZoeLXSpam")
+      Button.url("• Source Code •", "https://GitHub.com/RiZoeLX/RiZoeLXSpam")
       ],
       [
       Button.inline("• Help And Commands •", data="help")
