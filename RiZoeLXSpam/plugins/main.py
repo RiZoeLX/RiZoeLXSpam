@@ -2521,16 +2521,16 @@ async def fs(event):
 async def get_users(event):
    if event.sender_id == OWNER_ID or event.sender_id in DEV:
         if event.is_private:
-              return event.reply("**Kid !! Use This Command In Group !**")
+              return await event.reply("**Kid !! Use This Command In Group !**")
         fukyou = event.text.split(" ", 1)
         group = fukyou[1]
         if group.startswith("https://t.me/") or group.startswith("@"):
              await event.client(functions.channels.JoinChannelRequest(group))
              peer = 0
              a = 0
-             Add_Msg = await event.client.send_message(event.chat_id, f"**Scraping Users** \n __From Chat: {group}__ \n **© @RiZoeLX**")
+             Add_Msg = await event.client.send_message(event.chat_id, f"**Scraping Users From: {group}** \n\n **© @RiZoeLX**")
              async for sex in event.client.iter_participants(group, aggressive=True):
-             #   await Add_Msg.edit(f"**• Scraping Users •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
+             #   await Add_Msg.edit(f"**• Scraping Users __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
                 try:
                    await event.client(InviteToChannelRequest(event.chat_id, [sex]))
                    await asyncio.sleep(3)
