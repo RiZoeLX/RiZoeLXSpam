@@ -20,27 +20,16 @@
 - [x] Spam Assistant
 - [x] Members Scraping feature Bot
 
-# Deployment ✨
-> Click On buttons to expand !
 
-<details>
-<summary><h3>• Heroku Deployment </h3></summary>
-<br>
-
+<h3>• Heroku Deployment </h3><br>
 × <i> The easy way to host this bot, deploy to Heroku </i>
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam)
 
-</details>
-<details>
-<summary><b>• Session String</b></summary>
-<br>
-
+<h2>• Session String</h2><br>
 × <i> You'll need a API_ID & API_HASH in order to generate Telethon session string. Get This Values from [Here.](https://my.telegram.org) </i>
-
 <h4>• Generate Session via Repl.it: </h4>    
 <p><a href="https://replit.com/@RiZoeL/RiZoeLXSpam#main.py"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
-
+<br>
 <h4>• Generate Session Via Telegram Bot: </h4>
 <p><a href="http://t.me/TELESTRING_BOT?start=start"><img src="https://telegra.ph/file/fc547ab72781632da472a.jpg" width="200""/></a></p>
 
