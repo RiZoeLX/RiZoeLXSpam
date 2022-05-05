@@ -23,17 +23,17 @@
 
 <h3>• Heroku Deployment </h3><br>
 × <i> The easy way to host this bot, deploy to Heroku </i>
-
+<br>
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam)
 
 <br>
 
-# String Session
-> Click On Buttons To Expand
+<h3> String Session </h3>
+> Click On Below Button To Expand
 <details>
-<summary><b>• Session String</b></summary>
+<summary><b>• Session String •</b></summary>
 <br>
-× <i> You'll need a API_ID & API_HASH in order to generate Telethon session string. Get This Values from https://my.telegram.org </i>
+> <i> You'll need a API_ID & API_HASH in order to generate Telethon session string. Get This Values from https://my.telegram.org </i>
 <h4>• Generate Session via Repl.it: </h4>    
 <p><a href="https://replit.com/@RiZoeL/RiZoeLXSpam#main.py"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
 
