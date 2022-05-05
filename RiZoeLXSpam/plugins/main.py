@@ -1519,9 +1519,8 @@ async def dmspam(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sdm(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sdm(?: |$)(.*)" % hl))
 async def dm(e):   
-        usage = "**MODULE NAME** : **DM**\n\n command: \n\n .dm <username> <massage> \n .dm <reply to the use> <massage>"
-        if e.sender_id not in SUDO_USERS or e.sender_id not in DEV:
-               return
+    usage = "**MODULE NAME** : **DM**\n\n command: \n\n .dm <username> <massage> \n .dm <reply to the use> <massage>"
+    if e.sender_id not in SUDO_USERS or e.sender_id not in DEV:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         RiZoeL = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -1614,9 +1613,8 @@ async def dm(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sdmraid(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sdmraid(?: |$)(.*)" % hl))
 async def dmraid(e):
-        usage = "**MODULE NAME** : **DM RAID**\n\n command: \n\n .dmraid <count> <username> \n .dmraid <reply to the use> <massage>"
-        if e.sender_id not in SUDO_USERS or e.sender_id not in DEV:
-              return
+   usage = "**MODULE NAME** : **DM RAID**\n\n command: \n\n .dmraid <count> <username> \n .dmraid <reply to the use> <massage>"
+   if e.sender_id not in SUDO_USERS or e.sender_id not in DEV:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         RiZoeL = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -1714,9 +1712,9 @@ async def dmraid(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%stspam" % hl))
 async def tspam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **Time Spam**\n\nCommand:\n\n`{hl}tspam` <time in seconds> <count> <message to spam>\n\n`{hl}tspam` <time in Seconds> <count> <reply to a message>"     
-    rizol = e.chat_id
-    if e.sender_id in SUDO_USERS:
+   usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **Time Spam**\n\nCommand:\n\n`{hl}tspam` <time in seconds> <count> <message to spam>\n\n`{hl}tspam` <time in Seconds> <count> <reply to a message>"     
+   rizol = e.chat_id
+   if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         smex = await e.get_reply_message()
@@ -2521,14 +2519,16 @@ async def fs(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sscrape(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sscrape(?: |$)(.*)" % hl))
 async def get_users(event):
-    if event.sender_id == OWNER_ID or event.sender_id in DEV:
+   if event.sender_id == OWNER_ID or event.sender_id in DEV:
+        if event.is_private:
+              return event.reply("**Kid !! Use This Command In Group !**")
         fukyou = event.text.split(" ", 1)
         group = fukyou[1]
         if group.startswith("https://t.me/") or group.startswith("@"):
              await event.client(functions.channels.JoinChannelRequest(group))
              peer = 0
              a = 0
-             Add_Msg = await event.client.send_message(event.chat_id, f"__️Scraping Users From: {group}__")
+             Add_Msg = await event.client.send_message(event.chat_id, f"**Scraping Users** \n __From Chat: {group}__ \n **© @RiZoeLX**")
              async for sex in event.client.iter_participants(group, aggressive=True):
              #   await Add_Msg.edit(f"**• Scraping Users •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
                 try:
@@ -2536,7 +2536,7 @@ async def get_users(event):
                    await asyncio.sleep(3)
                    a += 1
                 except FloodWaitError as s:
-                #   await Add_Msg.edit(f"**FloodWaitError for** `{s.seconds}` **sec**\n\n **Users Added:** `{a}` \n **Scrape Group**: `{group}`")
+                   await Add_Msg.edit(f"**FloodWaitError for** `{s.seconds}` **sec**\n\n **Users Added:** `{a}` \n **Scrape Group**: `{group}`")
                    return
                 except UserPrivacyRestrictedError:
                    print("PrivacyRestrictedError")
@@ -2546,17 +2546,17 @@ async def get_users(event):
                    print("User Banned in Group")
                 except ChatAdminRequiredError:
                    print("Error: To Add Members Chat Admin Required")
-                 #  await Add_Msg.edit(f"**Error 404 !!** \nTo Add Members Chat Admin Required")
+                   await Add_Msg.edit(f"**Error 404 !!** \nTo Add Members Chat Admin Required")
                    return
                 except ValueError:
                    print(f"Error: Can't Find Group/channel")
-                #   await Add_Msg.edit(f"**Error 204 !!** \n Can't Find Group/Channel")
+                   await Add_Msg.edit(f"**Error 204 !!** \n Can't Find Group/Channel")
                    return
                 except PeerFloodError:
                  if peer == 10:
                     print("PeerFloodError")
                     peer += 1  
-                   # await Add_Msg.edit(f"**Error 102 !!** \n PeerFloodError !")
+                    await Add_Msg.edit(f"**Error 102 !!** \n PeerFloodError !")
                     return
                 except RPCError as ok:
                    print(f"ok.__class__.__name__")
