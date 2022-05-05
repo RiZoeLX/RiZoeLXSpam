@@ -30,10 +30,10 @@
 ----
 
 <h3 align="center"> String Session </h3>
-> Click On Below Button To Expand 
-<br>
+- Click On Below Button To Expand 
+
 <details>
-<summary><b>• Session String •</b></summary>
+<summary><b> Session </b></summary>
 <br>
 × <i> You'll need a API_ID & API_HASH in order to generate Telethon session string. Get This Values from https://my.telegram.org </i>
 <h4>• Generate Session via Repl.it: </h4>    
