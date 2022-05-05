@@ -24,6 +24,7 @@
 <h3>• Heroku Deployment </h3><br>
 × <i> The easy way to host this bot, deploy to Heroku </i>
 <br>
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RiZoeLX/RiZoeLXSpam)
 
 <br>
@@ -43,6 +44,6 @@
 </details>
 
 
-# Support:
+<he> Support: </h3>
   * <i> Channel </i>: [@RiZoeLX](https://t.me/RiZoeLX) <br>
   * <i> Support </i>: [@DNHxHELL](https://t.me/DNHxHELL) | [@RiZoeLXSpam](https://t.me/RiZoeLXSpam)
