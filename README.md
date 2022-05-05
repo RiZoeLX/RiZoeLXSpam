@@ -21,7 +21,7 @@
 - [x] Members Scraping feature Bot
 ----
 
-<h3>• Heroku Deployment </h3><br>
+<h3 align="center"> Heroku Deployment </h3><br>
 × <i> The easy way to host this bot, deploy to Heroku </i>
 <br>
 
@@ -29,7 +29,7 @@
 
 ----
 
-<h3> String Session </h3>
+<h3 align="center"> String Session </h3>
 > Click On Below Button To Expand
 <details>
 <summary><b>• Session String •</b></summary>
@@ -45,6 +45,6 @@
 
 ----
 
-<he> Support: </h3>
+<h3 align="center"> Support: </h3>
   * <i> Channel </i>: [@RiZoeLX](https://t.me/RiZoeLX) <br>
   * <i> Support </i>: [@DNHxHELL](https://t.me/DNHxHELL) | [@RiZoeLXSpam](https://t.me/RiZoeLXSpam)
