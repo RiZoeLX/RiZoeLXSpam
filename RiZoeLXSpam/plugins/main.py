@@ -157,7 +157,7 @@ async def alive(event):
            Name = Findme.first_name
            username = Findme.username
            rizoel += f"► **ᴀssɪsᴛᴀɴᴛ:** __On__ \n"
-           rizoel += f"    × ᴀssɪsᴛᴀɴᴛ ɴᴀᴍᴇ: {Name} \n    × ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀɴᴀᴍᴇ: @{username}\n"
+           rizoel += f"    × ɴᴀᴍᴇ: {Name} \n    × ᴜsᴇʀɴᴀᴍᴇ: @{username}\n"
        else:
            rizoel += "► **ᴀssɪsᴛᴀɴᴛ:** __Off__\n"
        rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [Join.](https://t.me/RiZoeLX)\n"
@@ -2521,7 +2521,8 @@ async def fs(event):
 async def get_users(event):
    if event.sender_id == OWNER_ID or event.sender_id in DEV:
         if event.is_private:
-              return await event.reply("**Kid !! Use This Command In Group !**")
+             await event.reply("**Kid !! Use This Command In Group !**")
+             return
         fukyou = event.text.split(" ", 1)
         group = fukyou[1]
         if group.startswith("https://t.me/") or group.startswith("@"):
