@@ -13,8 +13,7 @@ ABORT = "**All process Cancelled !**"
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]scrape"))
 async def scrape(event):
-     if event.sender_id not in DEV:
-           return
+  if event.sender_id not in DEV:
      if event.is_group:
           return await event.reply("**Use this Cmd in PM !!**")
      async with RiZoeL.conversation(event.chat_id) as rizx:
