@@ -1218,9 +1218,7 @@ async def pspam(e):
             else:
                  porrn = random.choice(PORMS)
                  for _ in range(counter):
-                     async with e.client.action(e.chat_id, "document"):
-                         smex = await e.client.send_file(e.chat_id, porrn)
-                         await gifspam(e, smex) 
+                     await e.client.send_file(e.chat_id, porrn)
                      await asyncio.sleep(0.5)
         else:
             usage = f"**MODULE NAME : PORN SPAM** \n\n command: `{hl}pornspam <count>`"
