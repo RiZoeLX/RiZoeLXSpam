@@ -3,6 +3,8 @@ import functools
 def is_admin(func):
     @functools.wraps(func)
     async def a_c(event):
+        if event.is_private:
+              return
         is_admin = False
         if not event.is_private:
             try:
