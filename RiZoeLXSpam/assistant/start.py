@@ -183,8 +183,7 @@ RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5e
         
 @RiZoeL.on(events.NewMessage(pattern="[!/]ping"))
 async def Botping(e):
-        if e.sender_id not in SUDO_USERS or e.sender_id not in DEV:
-             return
+   if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         fuk = await e.reply("Pᴏɴɢ!!.....")
         start = datetime.now()
         end = datetime.now()
