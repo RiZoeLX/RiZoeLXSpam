@@ -134,7 +134,7 @@ async def pjoin(event):
             return
         hehe = await rizx.send_message("__joining__ .....")
         await asyncio.sleep(1)
-        await hehe.edit(f"**Successfully Left** ✅ \n\n __Group/channel:__ {Group}")
+        await hehe.edit(f"**Joined Successfully** ✅ \n\n __Private Group/channel:__ {Group}")
         try:
            if Riz:
                  await Riz(ImportChatInviteRequest(hash))
