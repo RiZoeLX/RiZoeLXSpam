@@ -1861,18 +1861,17 @@ async def join(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%spjoin(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%spjoin(?: |$)(.*)" % hl))
 async def privatejoin(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n{hl}pjoin <Private Group link or access hash>"
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n{hl}pjoin <Private Group link>"
     if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
             if bc.startswith("https://t.me/+"):
                 hash = bc.split('/t.me/+')[1]
-                grp = bc
             text = "Joining...."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
-                await e.client(ImportChatInviteRequest(grp))
+                await e.client(ImportChatInviteRequest(hash))
                 await event.edit("Joined Successfully (Private Group/channel) ✅")
             except Exception as e:
                 await event.edit(str(e))   
