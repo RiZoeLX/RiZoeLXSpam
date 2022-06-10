@@ -427,8 +427,6 @@ async def bot_help(e):
                 await e.reply(raid_help)
             elif helping.lower() == "dm":
                 await e.reply(dm_help)
-            elif helping.lower() == "echo":
-                await e.reply(echo_help)
             elif helping.lower() == "userbot":
                 await e.reply(userbot_help)
             elif helping.lower() == "join":
