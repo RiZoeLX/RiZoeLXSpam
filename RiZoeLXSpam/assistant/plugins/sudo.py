@@ -75,7 +75,7 @@ async def add_sudo(event):
             newsudo = f"{id}"
         await ok.edit(f"**⚜️ New Sudo Added** \n\n User: {nname} \n User ID: {id} \n\n Wait until Restart !! ")
         heroku_var[rizoel] = newsudo
-     if event.sender_id in SUDO_USERS:
+  elif event.sender_id in SUDO_USERS:
          await event.reply("**Kid !! Only Owner and Full Sudo Users Can Add Sudos**")
 
 @RiZoeL.on(events.NewMessage(pattern="[!/]fullsudo"))
