@@ -2524,7 +2524,7 @@ async def get_users(event):
              await event.client(functions.channels.JoinChannelRequest(group))
              peer = 0
              a = 0
-             Add_Msg = await event.client.send_message(event.chat_id, f"**Scraping Users From: {group}** \n\n **© @RiZoeLX**")
+             await event.client.send_message(event.chat_id, f"**Scraping Users From: {group}** \n\n **© @RiZoeLX**")
              async for sex in event.client.iter_participants(group, aggressive=True):
              #   await Add_Msg.edit(f"**• Scraping Users __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
                 try:
@@ -2532,7 +2532,7 @@ async def get_users(event):
                    await asyncio.sleep(3)
                    a += 1
                 except FloodWaitError as s:
-                   await Add_Msg.edit(f"**FloodWaitError for** `{s.seconds}` **sec**\n\n **Users Added:** `{a}` \n **Scrape Group**: `{group}`")
+                   await event.client.send_message(event.chat_id, f"**FloodWaitError for** `{s.seconds}` **sec**\n\n **Users Added:** `{a}` \n **Scrape Group**: `{group}`")
                    return
                 except UserPrivacyRestrictedError:
                    print("PrivacyRestrictedError")
@@ -2542,20 +2542,20 @@ async def get_users(event):
                    print("User Banned in Group")
                 except ChatAdminRequiredError:
                    print("Error: To Add Members Chat Admin Required")
-                   await Add_Msg.edit(f"**Error 404 !!** \nTo Add Members Chat Admin Required")
+                   await event.client.send_message(event.chat_id, f"**Error 404 !!** \nTo Add Members Chat Admin Required")
                    return
                 except ValueError:
                    print(f"Error: Can't Find Group/channel")
-                   await Add_Msg.edit(f"**Error 204 !!** \n Can't Find Group/Channel")
+                   await event.client.send_message(event.chat_id, f"**Error 204 !!** \n Can't Find Group/Channel")
                    return
                 except PeerFloodError:
                  if peer == 10:
                     print("PeerFloodError")
                     peer += 1  
-                    await Add_Msg.edit(f"**Error 102 !!** \n PeerFloodError !")
+                    await event.client.send_message(event.chat_id, f"**Error 102 !!** \n PeerFloodError !")
                     return
                 except RPCError as ok:
                    print(f"ok.__class__.__name__")
                 except Exception as e:
                    print(e)
-             return await Add_Msg.edit(f"**• Users Added •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
+             return await event.client.send_message(event.chat_id, f"**• Users Added •** \n\n • __From Chat:__ {group} \n • __Users added:__ `{a}` \n\n **© @RiZoeLX**")
