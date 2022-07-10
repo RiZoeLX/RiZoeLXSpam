@@ -47,9 +47,9 @@ def xHell(milliseconds: int) -> str:
     else:
         return xd
 
-pongg = PING_MSG if PING_MSG else "ʀɪᴢᴏᴇʟ X sᴘᴀᴍ"
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
-Alivemsg = ALIVE_MSG if ALIVE_MSG else "𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲."
+pongg = PING_MSG if PING_MSG else "ʟᴏᴠᴇ X sᴘᴀᴍ"
+RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/3261e6b0f7746c55c1402.jpg"
+Alivemsg = ALIVE_MSG if ALIVE_MSG else "𝐋𝐨𝐯𝐞 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲."
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%sping" % hl))
 @Riz2.on(events.NewMessage(incoming=True, pattern=r"\%sping" % hl))
@@ -151,7 +151,7 @@ async def alive(event):
        rizoel += f"════════════════════\n"
        rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.10.4`\n"
        rizoel += f"► **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-       rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"  
+       rizoel += f"► **ʟᴏᴠᴇXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"  
        if BOT_TOKEN:
            Findme = await RiZoeL.get_me()
            Name = Findme.first_name
@@ -160,9 +160,9 @@ async def alive(event):
            rizoel += f"    × ɴᴀᴍᴇ: {Name} \n    × ᴜsᴇʀɴᴀᴍᴇ: @{username}\n"
        else:
            rizoel += "► **ᴀssɪsᴛᴀɴᴛ:** __Off__\n"
-       rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [Join.](https://t.me/RiZoeLX)\n"
+       rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [Join.](https://t.me/YARRI_KA_CIRCLE_2)\n"
        rizoel += f"════════════════════\n\n"
-       rizoel += f"► **Source Code:** [•Repo•](https://github.com/RiZoeLX/RiZoeLXSpam)"
+       rizoel += f"► **Source Code:** [•Repo•](Https://t.me/Ritik_kashyap_7)"
        await event.client.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
